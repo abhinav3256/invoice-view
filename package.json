@@ -11,7 +11,7 @@
     "dotenv": "^16.0.3",
     "cors": "^2.8.5",
     "body-parser": "^1.20.1",
-    "@shopify/shopify-api": "^7.3.0",
+    "@shopify/shopify-api": "^11.11.1",
     "express-session": "^1.17.3"
   }
 }
