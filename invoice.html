@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <script>
+        async function fetchOrders() {
+            const response = await fetch("/orders");
+            const data = await response.json();
+            console.log(data); // Check orders in console
+            document.getElementById("orders").innerHTML = JSON.stringify(data, null, 2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Shopify Invoice Generator</h1>
+    <button onclick="fetchOrders()">Fetch Orders</button>
+    <pre id="orders"></pre>
+</body>
+</html>
