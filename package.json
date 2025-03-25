@@ -1,7 +1,7 @@
 {
-  "name": "invoice-app",
+  "name": "shopify-invoice-app",
   "version": "1.0.0",
-  "description": "Shopify Invoice App",
+  "description": "A Shopify app for generating invoices",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -10,6 +10,8 @@
     "express": "^4.18.2",
     "dotenv": "^16.0.3",
     "cors": "^2.8.5",
-    "body-parser": "^1.20.1"
+    "body-parser": "^1.20.1",
+    "@shopify/shopify-api": "^7.3.0",
+    "express-session": "^1.17.3"
   }
 }
