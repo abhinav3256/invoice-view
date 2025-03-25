@@ -29,7 +29,7 @@ const shopify = shopifyApi({
 });
 
 // Step 1: Install App (OAuth)
-app.get("/auth", async (req, res) => {
+app.get("/", async (req, res) => {
   const shop = req.query.shop;
   if (!shop) return res.status(400).send("Shop parameter is missing");
 
